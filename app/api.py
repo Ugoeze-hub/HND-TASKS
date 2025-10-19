@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 import os
 
 load_dotenv()
-app = Flask(__name__, template_folder='templates', static_folder='static')
+app = Flask(__name__)
 
 name = os.getenv("USER_NAME")
 email = os.getenv("USER_EMAIL")
