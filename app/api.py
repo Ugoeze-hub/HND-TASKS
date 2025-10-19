@@ -1,4 +1,4 @@
-from flask import Flask, jsonify, render_template, Response
+from flask import Flask, jsonify, Response
 import requests
 import json
 from datetime import datetime, timezone
@@ -16,10 +16,7 @@ tech_stack = "Python/Flask"
 
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({
-        "message": "Welcome to the Backend Wizards API",
-        "instructions": "Visit /me to view your profile and a random cat fact"
-    }), 200
+    return "Hii, go to /me to see the API response."
 
 @app.route('/me', methods=['GET'])
 def hng_task_0():
