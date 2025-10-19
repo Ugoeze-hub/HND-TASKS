@@ -49,4 +49,4 @@ def hng_task_0():
     return Response(json_data, mimetype='application/json')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
