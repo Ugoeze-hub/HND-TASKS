@@ -17,8 +17,8 @@ tech_stack = "Python/Flask"
 @app.route('/', methods=['GET'])
 def home():
     return jsonify({
-        "message": "Welcome to the Backend Wizards API 👋",
-        "instructions": "Visit /me to view your profile and a random cat fact 🐱"
+        "message": "Welcome to the Backend Wizards API",
+        "instructions": "Visit /me to view your profile and a random cat fact"
     }), 200
 
 @app.route('/me', methods=['GET'])
